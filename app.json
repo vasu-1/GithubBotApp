@@ -1,0 +1,7 @@
+{
+  "name": "pygithub-bot",
+  "description": "python based github bot",
+  "repository": "https://github.com/vasu-1/GithubBotApp",
+  "logo": "https://avatars.githubusercontent.com/u/76911582?s=400&u=b9cb524048106105339dc54e0893ad4232de7d58&v=4",
+  "keywords": ["pygithub-bot-app"]
+}
