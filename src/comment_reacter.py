@@ -45,7 +45,7 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     author = event.data['comment']['user']['login']
 
 
-    if(author != repo_owner && author != 'pygithub-bot-app[bot]') :
+    if(author != repo_owner and author != 'pygithub-bot-app[bot]') :
 
         #reaction for the create issue comment
         message = 'heart'
@@ -83,7 +83,7 @@ async def issue__comment_edit_event(event, gh, *args, **kwargs):
     author = event.data['comment']['user']['login']
 
 
-    if(author != repo_owner && author != 'pygithub-bot-app[bot]') :
+    if(author != repo_owner and author != 'pygithub-bot-app[bot]') :
 
         #reaction for the edit issue comment
         message = 'eyes'
