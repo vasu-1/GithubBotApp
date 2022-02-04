@@ -11,7 +11,6 @@ from gidgethub import apps
 
 router = routing.Router()
 
-
 ############################ issue comment reactor #############################################
 # https://stackoverflow.com/questions/64112300/how-can-i-get-the-list-of-github-webhook-events
 
@@ -73,7 +72,7 @@ async def issue__comment_edit_event(event, gh, *args, **kwargs):
         app_id=os.environ.get("GH_APP_ID"),
         private_key=os.environ.get("GH_PRIVATE_KEY")
     )
-    
+
     #url for the comment reaction api
     url = event.data['comment']['reactions']['url']
 
