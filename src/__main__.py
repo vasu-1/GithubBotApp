@@ -12,7 +12,9 @@ from gidgethub import routing
 from gidgethub import sansio
 from gidgethub import apps
 
-router = routing.Router()
+from . import issue_close_greet
+
+router = routing.Router(issue_close_greet.router)
 cache = cachetools.LRUCache(maxsize=500)
 
 routes = web.RouteTableDef()
