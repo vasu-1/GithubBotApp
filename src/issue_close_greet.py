@@ -10,6 +10,15 @@ router = routing.Router()
 @router.register("issues", action="closed")
 async def issue_opened_event(event, gh, *args, **kwargs):
 
+    installation_id = event.data["installation"]["id"]
+
+    installation_access_token = await apps.get_installation_access_token(
+        gh,
+        installation_id=installation_id,
+        app_id=os.environ.get("GH_APP_ID"),
+        private_key=os.environ.get("GH_PRIVATE_KEY")
+    )
+
     #url for the comment url
     url = event.data['issue']['comments_url']
     
@@ -23,4 +32,6 @@ async def issue_opened_event(event, gh, *args, **kwargs):
     
     await gh.post(url, data={
         'body': message,
-        })
+        },
+        oauth_token=installation_access_token["token"]
+                 )
