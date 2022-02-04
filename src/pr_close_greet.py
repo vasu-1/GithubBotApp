@@ -44,10 +44,10 @@ async def issue_opened_event(event, gh, *args, **kwargs):
     pr_check = event.data['pull_request']['merged']
 
     #message to be posted
-    message_c = f"<table><tbody><tr><td>Thanks for closing this pull_request and contributing to our repository @{author} ! We hope you loved to work with our repository 😋.</td></tr></tbody></table>"
+    message_c = f"<br><table><tbody><tr><td>Thanks for closing this pull_request and contributing to our repository @{author} ! We hope you loved to work with our repository 😋.</td></tr></tbody></table>"
     
     #message to be posted
-    message_m = f"<table><tbody><tr><td>Hureeeeeeeh 🤩 ! Your Pull request has been merged 🥳 ! Thanks for contributing to our repository @{author} ! We hope you loved to work with our repository 😋.</td></tr></tbody></table>"
+    message_m = f"<br><table><tbody><tr><td>Hureeeeeeeh 🤩 ! Your Pull request has been merged 🥳 ! Thanks for contributing to our repository @{author} ! We hope you loved to work with our repository 😋.</td></tr></tbody></table>"
     
 
     #if pr check is true means it is merged
