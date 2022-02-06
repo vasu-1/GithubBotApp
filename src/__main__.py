@@ -49,6 +49,8 @@ async def webhook(request):
         return web.Response(status=500)
 
 
+
+# Installation Bot : It will fire up when installation will be happened from the user!!
 @router.register("installation", action="created")
 async def repo_installation_added(event, gh, *args, **kwargs):
     installation_id = event.data["installation"]["id"]
