@@ -11,7 +11,6 @@ from gidgethub import apps
 
 router = routing.Router()
 
-############################ Pull request Greetings when closed #############################################
 
 
 @router.register("pull_request", action="closed")

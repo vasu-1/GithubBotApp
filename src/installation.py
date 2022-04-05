@@ -16,7 +16,7 @@ async def repo_installation_added(event, gh, *args, **kwargs):
     response = await gh.post(
         url,
                      data={
-        'title': 'Thanks for installing pygithub-bot',
+        'title': 'Thanks for installing GitHub-Bot',
         'body': 'Thanks!',
             },
         oauth_token=installation_access_token["token"]

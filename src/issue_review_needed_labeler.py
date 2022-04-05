@@ -11,11 +11,12 @@ from gidgethub import apps
 
 router = routing.Router()
 
-LABEL1 = 'review_needed' # label name
-LABEL2 = 'GSSoC22'
+# LABEL = 'review_needed' # label name
+LABEL1 = 'GSSoC22'
 
-@router.register("pull_request", action="opened")
+@router.register("issues", action="opened")
 async def issue_opened_event(event, gh, *args, **kwargs):
+    label = event.data['issue']['labels_url']
 
     installation_id = event.data["installation"]["id"]
 
@@ -26,14 +27,9 @@ async def issue_opened_event(event, gh, *args, **kwargs):
         private_key=os.environ.get("GH_PRIVATE_KEY")
     )
 
-    is_url = event.data['pull_request']['issue_url']
-    suffix = '/labels{/name}'
-    label_url = is_url + suffix
-
-
-    await gh.post(label_url, data=[LABEL1],
+    # await gh.post(label, data=[LABEL],
+    #     oauth_token=installation_access_token["token"]
+    #              ) #event post for key label
+    await gh.post(label, data=[LABEL1],
         oauth_token=installation_access_token["token"]
-                 ) #event post for key label
-    await gh.post(label_url, data=[LABEL2],
-        oauth_token=installation_access_token["token"]
-                 )
+                 ) 

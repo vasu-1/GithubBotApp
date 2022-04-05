@@ -11,8 +11,6 @@ from gidgethub import apps
 
 router = routing.Router()
 
-###################### To check workflow status and notify users(Not working currently)#################
-
 @router.register("workflow_run", action="completed")
 async def workflow_job(event, gh, *arg, **kwargs):
 
@@ -26,7 +24,7 @@ async def workflow_job(event, gh, *arg, **kwargs):
 	)
 
 	status = event.data['workflow_run']['conclusion']
-	# ur = event.data['pull_request']['comments_url']
+	ur = event.data['pull_request']['comments_url']
 	# link // we can set link acording to our convenience !!
 	pass
 	# if(status == "success"):
@@ -34,15 +32,15 @@ async def workflow_job(event, gh, *arg, **kwargs):
 	# 	await gh.post(link, data={
 	# 		'body': messag,
 	# 		},
-            # oauth_token=installation_access_token["token"]
-            #      )
+ #            oauth_token=installation_access_token["token"]
+ #                 )
 
 	# elif(status == "failure"):
 	# 	messag = f"Failure"
 	# 	await gh.post(link, data={
 	# 		'body': messag,
 	# 		},
-            # oauth_token=installation_access_token["token"]
-            #      )
+ #            oauth_token=installation_access_token["token"]
+ #                 )
 	# else:
 	# 	return

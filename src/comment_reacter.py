@@ -11,16 +11,6 @@ from gidgethub import apps
 
 router = routing.Router()
 
-############################ issue comment reactor #############################################
-# https://stackoverflow.com/questions/64112300/how-can-i-get-the-list-of-github-webhook-events
-
-
-# This thing we can't do IRL but this can be a fun exercise !! for the building the bots !!
-
-
-# issue comment reacter will also work for pull request so we don't need to do other stuff for that
-
-
 @router.register("issue_comment", action="created")
 async def issue__comment_create_event(event, gh, *args, **kwargs):
 
@@ -35,10 +25,8 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
     )
 
 
-    #url for the comment reaction api
     url = event.data['comment']['reactions']['url']
 
-    #finding owner to not react on that comment
     repo_owner = event.data['repository']['owner']['login']
 
     #finding author of the comment
@@ -47,7 +35,6 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
 
     if(author != repo_owner and author != 'pygithub-bot-app[bot]') :
 
-        #reaction for the create issue comment
         message = 'heart'
 
         await gh.post(url, data={
@@ -55,11 +42,6 @@ async def issue__comment_create_event(event, gh, *args, **kwargs):
         },
         oauth_token=installation_access_token["token"]
                  )
-
-        # await gh.post(url, data={
-        #     'heart': 1,
-        # })
-
 
 @router.register("issue_comment", action="edited")
 async def issue__comment_edit_event(event, gh, *args, **kwargs):
@@ -72,20 +54,15 @@ async def issue__comment_edit_event(event, gh, *args, **kwargs):
         app_id=os.environ.get("GH_APP_ID"),
         private_key=os.environ.get("GH_PRIVATE_KEY")
     )
-
-    #url for the comment reaction api
     url = event.data['comment']['reactions']['url']
 
-    #finding owner to not react on that comment
     repo_owner = event.data['repository']['owner']['login']
 
-    #finding author of the comment
     author = event.data['comment']['user']['login']
 
 
     if(author != repo_owner and author != 'pygithub-bot-app[bot]') :
 
-        #reaction for the edit issue comment
         message = 'eyes'
 
         await gh.post(url, data={

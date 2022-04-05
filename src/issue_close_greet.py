@@ -12,8 +12,6 @@ from gidgethub import apps
 
 router = routing.Router()
 
-############################ Issue Greetings when closed #############################################
-
 
 @router.register("issues", action="closed")
 async def issue_opened_event(event, gh, *args, **kwargs):
@@ -26,16 +24,8 @@ async def issue_opened_event(event, gh, *args, **kwargs):
         app_id=os.environ.get("GH_APP_ID"),
         private_key=os.environ.get("GH_PRIVATE_KEY")
     )
-
-    #url for the comment url
     url = event.data['issue']['comments_url']
-    
-    #author of the issue creater
     author = event.data['issue']['user']['login']
-
-    # avatar = event.data['issue']['user']['avatar_url']
-
-    #message tobe posted
     message = f"<br><table><tbody><tr><td>Thanks for closing this issue @{author}! We hope you loved to work with our repository 😋.</td></tr></tbody></table>"
     
     await gh.post(url, data={
