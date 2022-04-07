@@ -23,7 +23,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", name="home")
 async def handle_get(request):
-    return web.Response(text="<h1>Hello this is Vashishth</h1>")
+    return web.Response(text="<h1>Hello this is PyGithub Bots</h1>")
 
 
 @routes.post("/webhook")
@@ -66,7 +66,7 @@ async def repo_installation_added(event, gh, *args, **kwargs):
     response = await gh.post(
         url,
                      data={
-        'title': 'Thanks for installing Vashishth\'s bot',
+        'title': 'Thanks for installing Pygithub bot',
         'body': 'Thanks!',
             },
         oauth_token=installation_access_token["token"]
