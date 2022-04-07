@@ -12,7 +12,7 @@ from gidgethub import apps
 router = routing.Router()
 
 # LABEL = 'review_needed' # label name
-LABEL1 = 'GSSoC22'
+LABEL1 = 'issue_review_needed'
 
 @router.register("issues", action="opened")
 async def issue_opened_event(event, gh, *args, **kwargs):
