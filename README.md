@@ -1,4 +1,4 @@
-<h1 align="center"> [GithubBotApp](https://github.com/apps/pygithub-bot-app) :robot: </h1>
+<h1 align="center">GithubBotApp :robot: </h1>
 <h3 align="center">A GitHub app for automating the GitHub workflow.</h3>
 
 <div align="center">
