@@ -1,13 +1,13 @@
 <h1 align="center">GithubBotApp :robot: </h1>
 <h3 align="center">A GitHub app for automating the GitHub workflow.</h3>
-<hr>
 
-# About :computer:
 <div align="center">
 <a href="https://github.com/vasu-1/GithubBotApp"><img src="https://sloc.xyz/github/vasu-1/GithubBotApp" alt="total lines"/></a>
 <a href="https://github.com/vasu-1/GithubBotApp"><img src="https://img.shields.io/github/stars/vasu-1/GithubBotApp" alt="Stars"/></a>
 <a href="https://github.com/vasu-1/GithubBotApp/network/members"><img src="https://img.shields.io/github/forks/vasu-1/GithubBotApp" alt="Forks"/></a>
 </div>
+<hr>
+# About :computer:
   
 - It is a GitHub app for automating the GitHub workflow. It is made using Python. 
 - It is using gidgethub Library for communicating to the GitHub events. 
