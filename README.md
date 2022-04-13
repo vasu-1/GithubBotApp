@@ -14,9 +14,9 @@
   
 - It is a GitHub app for automating the GitHub workflow. It is made using Python. 
 - It is using gidgethub Library for communicating to the GitHub events. 
-- Bot uses various type of GitHub events and does stuff according to that event. 
-- This bot can be used in various type of events like if we are hosting an event for any coding stuff on a large scale than we can use this type of bots for making out event more interesting.
-- You don't need to install or configure stuff manually, because I have hosted it on GitHub and anyone can use this app in their repository with only one click !!
+- Bot uses various type of GitHub events and does work according to that event. 
+- This bot can be used in various type of events like if we are hosting an event for any coding work on a large scale than we can use this type of bots for making out event more interesting.
+- You don't need to install or configure things manually, because I have hosted it on GitHub and anyone can use this app in their repository with only one click !!
 
 ---
 
