@@ -42,3 +42,10 @@
 
 ### You can install this app via this link in your repository
 ##### [App Link](https://github.com/apps/pygithub-bot-app)
+
+---
+
+# Demo
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/76911582/163172894-5fa0da78-c31d-4a6a-b2da-d1fe1e1241a2.gif)
+
