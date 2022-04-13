@@ -7,6 +7,7 @@
 <a href="https://github.com/vasu-1/GithubBotApp/network/members"><img src="https://img.shields.io/github/forks/vasu-1/GithubBotApp" alt="Forks"/></a>
 </div>
 <hr>
+
 # About :computer:
   
 - It is a GitHub app for automating the GitHub workflow. It is made using Python. 
@@ -26,3 +27,5 @@
 - React on comments.
 >We can extend this list according to our requirements.
 
+#### You can install this app via this link in your repository
+##### [App Link](https://github.com/apps/pygithub-bot-app)
