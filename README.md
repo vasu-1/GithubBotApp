@@ -5,6 +5,7 @@
 <a href="https://github.com/vasu-1/GithubBotApp"><img src="https://sloc.xyz/github/vasu-1/GithubBotApp" alt="total lines"/></a>
 <a href="https://github.com/vasu-1/GithubBotApp"><img src="https://img.shields.io/github/stars/vasu-1/GithubBotApp" alt="Stars"/></a>
 <a href="https://github.com/vasu-1/GithubBotApp/network/members"><img src="https://img.shields.io/github/forks/vasu-1/GithubBotApp" alt="Forks"/></a>
+<a href="https://github.com/vasu-1/GithubBotApp/commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vasu-1/GithubBotApp?logo=github"></a>
 </div>
 
 ---
