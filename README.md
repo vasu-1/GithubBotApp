@@ -34,7 +34,7 @@
 
 # Tech Stack
 
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![python](https://img.shields.io/badge/python-v3.7-blue?style=for-the-badge&logo=python&logoColor=white)
 ![REST API](https://img.shields.io/badge/rest%20api%20-%23323330.svg?&style=for-the-badge&logo=rest&logoColor=%23F7DF1E)
 
 ---
