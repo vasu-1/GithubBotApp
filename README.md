@@ -1,4 +1,4 @@
-<h1 align="center">GithubBotApp :robot: </h1>
+<h1 align="center"> [GithubBotApp](https://github.com/apps/pygithub-bot-app) :robot: </h1>
 <h3 align="center">A GitHub app for automating the GitHub workflow.</h3>
 
 <div align="center">
@@ -27,5 +27,5 @@
 - React on comments.
 >We can extend this list according to our requirements.
 
-#### You can install this app via this link in your repository
+### You can install this app via this link in your repository
 ##### [App Link](https://github.com/apps/pygithub-bot-app)
